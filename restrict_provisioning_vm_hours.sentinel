@@ -12,10 +12,10 @@ get_vms = func() {
 vms = get_vms()
 
 # UTC Hours when VMs can be created
-# to be after 10pm or before 4am
+# to be after 6am or before 10pm
 restrict_hours = rule {
-  all vms as _, instances {
-    all instances as index, r {
+  all vms as _, virtual_machines {
+    all virtual_machines as index, r {
       time.now.hour >= 6  or time.now.hour <= 22
     }
   }
