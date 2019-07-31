@@ -1,5 +1,5 @@
 policy "enforce_mandatory_tags" {
-    enforcement_level = "hard-mandatory"
+    enforcement_level = "soft-mandatory"
 }
 
 policy "restrict_provisioning_vm_hours" {
