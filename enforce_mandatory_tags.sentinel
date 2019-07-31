@@ -10,7 +10,7 @@ mandatory_tags = [
 ]
 
 # Get all Azure Virtual Machines contained in all modules being used
-get_azure_virtual_machines = func() {
+get_azurerm_virtual_machines = func() {
     instances = []
     for tfplan.module_paths as path {
         instances += values(tfplan.module(path).resources.azurerm_virtual_machine) else []
