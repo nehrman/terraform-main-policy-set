@@ -1,11 +1,11 @@
 import "tfconfig"
 
 # Require all modules directly under root module
-# to have version 1.0.1
+# to have version 1.0.0
 check_module_versions  = func() {
   validated = true
   for tfconfig.modules as _, m {
-    if m.version is not "1.0.1" {
+    if m.version is not "1.0.0" {
       print("Module with source", m.source, "has barred version", m.version)
       validated = false
     } else {
