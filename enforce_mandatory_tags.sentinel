@@ -112,7 +112,7 @@ validate_attribute_contains_list = func(type, attribute, required_values) {
 mandatory_tags = [
   "environment",
   "TTL",
-  "Owner"
+  "Owner",
 ]
 
 ### Rules ###
