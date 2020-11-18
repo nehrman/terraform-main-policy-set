@@ -5,7 +5,7 @@ import "tfconfig"
 check_module_versions  = func() {
   validated = true
   for tfconfig.modules as _, m {
-    if m.version is < "1.0.0" {
+    if m.version is "1.0.0" {
       print("Module with source", m.source, "has barred version", m.version)
       validated = false
     } else {
